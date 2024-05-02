@@ -93,7 +93,7 @@ section {
   color: #f39c12;
 }
 
-.inline-btn,
+/* .inline-btn,
 .inline-option-btn,
 .inline-delete-btn,
 .btn,
@@ -107,7 +107,7 @@ section {
   padding: 1rem 3rem;
   text-align: center;
   margin-top: 1rem;
-}
+} */
 
 /* .btn,
 .delete-btn,
@@ -116,10 +116,10 @@ section {
   width: 100%;
 } */
 
-.inline-btn,
+/* .inline-btn,
 .inline-option-btn,
 .inline-delete-btn {
-  display: inline-block;
+  display: inline;
 }
 
 .option-btn,
@@ -140,6 +140,49 @@ section {
 .option-btn:hover {
   background-color: var(--black);
   color: var(--white);
+} */
+
+.r {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.price {
+  background-color: #31a0f5; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: normal;
+  gap: 10px;
+  width: 100%;
+
+  /* Add any other desired CSS properties */
+}
+.price:hover {
+  background-color: #0056b3;
+  color: #fff; /* Text color on hover */
+  /* Additional properties for animation */
+  transform: scale(1.1); /* Scale the element on hover */
+  box-shadow: 0 0 10px rgba(13, 13, 231, 0.852);
+}
+
+.inline-btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Additional styles for hover effect if needed */
@@ -149,6 +192,19 @@ section {
   /* Additional properties for animation */
   transform: scale(1.1); /* Scale the element on hover */
   box-shadow: 0 0 10px rgba(13, 13, 231, 0.852); /* Add a box shadow on hover */
+}
+
+.tutor:hover {
+  background-color: #13afd6e1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .flex-btn {
@@ -306,12 +362,10 @@ section {
   margin-top: 2rem;
 }
 
-.box:hover {
+/* .box:hover {
   background-color: #8bfa0c;
-}
-.tutor:hover {
-  background-color: #8bfa0c;
-}
+} */
+
 /* .thumb {
   /* width: 100px;
   height: 100px; 
@@ -329,6 +383,8 @@ section {
   background-color: #ccc;
   transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background-color and color */
   color: #000; /* Initial text color */
+  margin: 8px 2px;
+  width: 100%;
 }
 
 .title:hover {
